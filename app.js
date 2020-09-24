@@ -179,3 +179,64 @@ value = Math.floor(Math.random() * 20 + 1);
 console.log(value);
 
 console.clear();
+
+const firstName = 'William';
+const lastName = 'Johnson';
+const age = 35;
+let value1;
+
+value1 = firstName + ' ' + lastName;
+
+//apend
+
+value1 = 'Gabriel ';
+value1 += 'Neves';
+value1 = 'Hello, my name is ' + firstName + ' and I am ' + age;
+const str = 'Hello there, I am here!';
+const tags = 'web design, power overwhelming, pizza';
+
+// escaping
+value1 = 'that\'s awesome, I can\'t wait';
+
+// length - is a property, it does NOT need a (), only methods needs it
+value1 = firstName.length;
+
+// concat - method
+value1 = firstName.concat(' ', lastName);
+
+
+// toUpperCase & toLowerCase - method
+value1 = firstName.toUpperCase();
+value1 = firstName.toLowerCase();
+
+value1 = firstName[0];
+value1 = firstName[0].toLowerCase();
+
+// indexOf() - returns index position of string
+value1 = firstName.indexOf('l');
+value1 = firstName.lastIndexOf('l');
+
+// chartAt() - returns string at index position
+value1 = firstName.charAt('2');
+
+//get last char
+value1 = firstName.charAt(firstName.length - 1);
+
+// substring
+value1 = firstName.substring(0, 4);
+
+//slice()
+value1 = firstName.slice(0, 4);
+value1 = firstName.slice(-3);
+
+//split()
+value1 = str.split(' ');
+value1 = tags.split(',');
+
+//replace
+value1 = str.replace('there', 'here');
+
+//includes()
+value1 = str.includes('Hello');
+
+console.log(value1);
