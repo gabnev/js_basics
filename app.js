@@ -64,5 +64,44 @@ numbers.push(6);
 console.log(numbers);
 
 // this will not work because we are reassigning the array, not mutating it
-numbers = [1,2,3,4,5,6];
-console.log(numbers);
+// numbers = [1,2,3,4,5,6];
+// console.log(numbers);
+
+// DATA TYPES
+
+// primitive & reference
+// primitive is stored on the stack - string, boolean, number, etc...
+// referene is a pointer to a location in memory (heap) - arrays, object literals, functions, dates, etc...
+
+console.clear();
+
+// primitives
+
+const string = 'john doe';
+const number = 1;
+const boolean = true;
+const empty = null;
+const notDefined = undefined;
+const symbol = Symbol();
+
+// references
+
+const arrays = [1,2,3,4];
+const objectLit = {
+  city: 'boston',
+  state: 'MA'
+};
+
+const date = new Date();
+
+console.log(typeof name);
+console.log(typeof number);
+console.log(typeof boolean);
+console.log(typeof empty);
+console.log(typeof notDefined);
+console.log(typeof symbol);
+console.log(typeof arrays);
+console.log(typeof objectLit);
+console.log(typeof date);
+
+console.clear();
