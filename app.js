@@ -384,3 +384,40 @@ for(let i = 0; i < ships.length; i++){
 }
 
 console.clear();
+
+// Dates & Time
+
+let value4;
+
+const today = new Date();
+let birthday = new Date('12-12-1984 10:04:00');
+birthday = new Date('December 12 1984');
+birthday = new Date('12/12/1984');
+
+value4 = today.toString();
+value4 = today;
+value4 = birthday;
+value4 = today.getMonth();
+value4 = today.getDate();
+value4 = today.getDay(); //day of week
+value4 = today.getFullYear();
+value4 = today.getHours();
+value4 = today.getMinutes();
+value4 = today.getSeconds();
+value4 = today.getMilliseconds();
+value4 = today.getTime(); // time passed since january 1st 1970
+
+
+console.log(value4);
+console.log(typeof value4);
+
+birthday.setMonth(2);
+birthday.setDate(12);
+birthday.setFullYear(1986);
+birthday.setHours(3);
+birthday.setMinutes(30);
+birthday.setSeconds(35);
+
+console.log(birthday);
+
+console.clear();
