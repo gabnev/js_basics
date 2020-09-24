@@ -240,3 +240,37 @@ value1 = str.replace('there', 'here');
 value1 = str.includes('Hello');
 
 console.log(value1);
+
+console.clear();
+
+// template literals ES6
+
+const nome = 'John';
+const idade = '30';
+const trabalho = 'web developer';
+const cidade = 'lisboa';
+let html;
+
+// without template string (es5)
+
+html = '<ul><li>Name: ' + nome + '</li><li>Age: ' + idade + '</li><li>Job: ' + trabalho + '</li><li>City: ' + cidade + '</li></ul>';
+
+// with template string / literal (es6)
+
+function hello(){
+  return 'hello';
+}
+
+html = `
+  <ul>
+    <li>Name: ${nome}</li>
+    <li>Age: ${idade}</li>
+    <li>Job: ${trabalho}</li>
+    <li>City: ${cidade}</li>
+    <li>${2+2}</li>
+    <li>${hello()}</li>
+    <li>${age > 30 ? 'Over 30' : 'Under 30'}</li>
+  </ul>
+`;
+
+document.body.innerHTML = html;
