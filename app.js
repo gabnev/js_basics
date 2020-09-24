@@ -339,3 +339,48 @@ value2 = arr.find(over50);
 
 console.log(arr);
 console.log(value2);
+
+console.clear();
+
+// object literals
+
+const ship = {
+  type: 'combat',
+  price: 1000,
+  serviceTime: 30,
+  brand: 'drake',
+  size: 'medium',
+  role: ['trade', 'combat'],
+  components: {
+    shield: 'size 2',
+    powerplant: 'size 2'
+  },
+  getAge: function(){
+    return 2020 - this.serviceTime;
+  }
+}
+
+let value3;
+
+value3 = ship;
+
+value3 = ship.type;
+value3 = ship['type'];
+value3 = ship.brand;
+value3 = ship.role[1];
+value3 = ship.components.shield;
+value3 = ship.components['shield'];
+value3 = ship.getAge();
+
+console.log(value3);
+
+const ships = [
+  {name: 'cutlass', age: 30},
+  {name: 'caterpillar', age: 120}
+];
+
+for(let i = 0; i < ships.length; i++){
+  console.log(ships[i].name);
+}
+
+console.clear();
