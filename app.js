@@ -274,3 +274,68 @@ html = `
 `;
 
 document.body.innerHTML = html;
+
+// Arrays
+const arr = [1,2,3,4,5,6,7,8,9,10];
+const arr2 = new Array(11,12,13,14,15,16,17,18,19,20);
+const fruit = ['banana', 'apple', 'pearl'];
+const mixed = [22, 'hello', 'true', undefined, null, {a: 1, b: 2}]
+
+let value2;
+
+// array length
+value2 = arr.length;
+
+// if array
+value2 = Array.isArray(arr);
+
+// get single value
+value2 = arr[0];
+value2 = arr[3];
+
+// insert into array
+arr[2] = 100;
+
+// find index of value
+value2 = arr.indexOf(2);
+
+//mutating
+//add to end
+arr.push(250);
+//add to front
+arr.unshift(120);
+// take off from end
+arr.pop();
+// take off from front
+arr.shift();
+// splice values
+// arr.splice(1, 3);
+// reverse array
+arr.reverse();
+// concat array
+value2 = arr.concat(arr2);
+//sort array
+value2 = fruit.sort();
+//compare function
+value2 = arr.sort(function(x, y) {
+  return x - y;
+})
+
+// value2 = arr.sort(function(x,y) {
+//   return y - x;
+// })
+
+// find
+function under50(num) {
+  return num < 50;
+}
+
+function over50(num) {
+  return num > 50;
+}
+
+value2 = arr.find(under50);
+value2 = arr.find(over50);
+
+console.log(arr);
+console.log(value2);
