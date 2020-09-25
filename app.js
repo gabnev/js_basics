@@ -421,3 +421,95 @@ birthday.setSeconds(35);
 console.log(birthday);
 
 console.clear();
+
+// if statements & comparison
+
+// if(something){
+//   do something;
+// } else {
+//   do something else;
+// }
+
+const id = '20';
+
+if(id == 21){
+  console.log('Correct');
+} else {
+  console.log('Incorrect');
+}
+
+if(id != 21){
+  console.log('Correct');
+} else {
+  console.log('Incorrect');
+}
+
+// check the type as well - triple equals
+
+if(id === 21){
+  console.log('Correct');
+} else {
+  console.log('Incorrect');
+}
+
+if(id !== 21){
+  console.log('Correct');
+} else {
+  console.log('Incorrect');
+}
+
+
+
+if(id){
+  console.log(`The ID is ${id}`);
+} else {
+  console.log('No ID');
+}
+
+// checking if undefined
+
+if(typeof id2 !== 'undefined'){
+  console.log(`The ID is ${id2}`);
+} else {
+  console.log('No ID');
+}
+
+// Greater or less than
+if(id > 200){
+  console.log('correct');
+} else {
+  console.log('correct');
+}
+
+// Else If
+
+const color = 'blue';
+
+if(color === 'red'){
+  console.log('Color is red');
+} else if(color === 'blue') {
+  console.log('color is blue');
+} else {
+  console.log('Color is not red or blue');
+}
+
+// logical operators
+const nickname = "Steve";
+const years = "16";
+
+if(years > 0 && years < 12){
+  console.log(`${nickname} is a child`);
+} else if(years >= 13 && years <19){
+  console.log(`${nickname} is a teenager`);
+} else {
+  console.log(`${nickname} is an adult`);
+}
+
+if(years < 16 || years > 65){
+  console.log(`${nickname} cannot run in race`);
+}  else {
+  console.log(`${nickname} is registered for the race`);
+}
+
+// ternary
+console.log(id === '20' ? 'correct' : 'incorrect');
