@@ -273,7 +273,7 @@ html = `
   </ul>
 `;
 
-document.body.innerHTML = html;
+// document.body.innerHTML = html;
 
 // Arrays
 const arr = [1,2,3,4,5,6,7,8,9,10];
@@ -713,3 +713,57 @@ const pilot = {
 for(let x in pilot){
   console.log(`${x} : ${pilot[x]}`);
 }
+
+console.clear();
+
+// window object methods & properties
+
+// const input = prompt();
+// alert(input);
+
+// if(confirm('Are you sure?')){
+//   console.log('Yes');
+// } else {
+//   console.log('No');
+// }
+
+let value5;
+
+//outter height width
+value5 = window.outerHeight;
+value5 = window.outerWidth;
+
+//inner height width
+value5 = window.innerHeight;
+value5 = window.innerWidth;
+
+//scroll points
+value5 = window.scrollY;
+value5 = window.scrollX;
+
+//location object
+value5 = window.location;
+value5 = window.location.hostname;
+value5 = window.location.port;
+value5 = window.location.href;
+value5 = window.location.search;
+
+//redirect
+// window.location.href = 'http://www.google.com';
+
+//reload
+// window.location.reload();
+
+// history object
+// window.history.go(-1);
+// window.history.length;
+
+//Navigator
+value5 = window.navigator;
+value5 = window.navigator.appVersion;
+value5 = window.navigator.userAgent;
+value5 = window.navigator.platform;
+value5 = window.navigator.vendor;
+value5 = window.navigator.language;
+
+console.log(value5);
