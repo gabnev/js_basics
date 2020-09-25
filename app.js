@@ -623,3 +623,93 @@ todo.delete = () => {
 todo.add();
 todo.edit(22);
 todo.delete();
+
+console.clear();
+
+// iterators
+// for loop - mostly used when you know the NUMBER of repetitions
+
+for(let i = 0; i <= 10; i++){
+  console.log('Number ' + i);
+}
+
+// continue - used to skip to the next iteration
+// break - gets out of the loop
+
+for(let i = 0; i <= 10; i++){
+  if(i === 2){
+    console.log('2 is my favorite number');
+    continue;
+  }
+
+  if(i === 8){
+    console.log('Stop the loop');
+    break;
+  }
+
+  console.log('Number ' + i);
+}
+
+// while loop - mostly used when you DON'T know the NUMBER of repetitions
+
+let i = 0;
+
+while(i < 10){
+  console.log('While Number ' + i);
+  i++;
+}
+
+// Do While Loop - will always run at least once
+
+let x = 0;
+
+do {
+  console.log('Do While Number ' + x);
+  x++;
+}
+
+while(x < 10);
+
+const cars = ['suzuki', 'honda', 'toyota'];
+
+for(let i = 0; i < cars.length; i++){
+  console.log(cars[i]);
+}
+
+// for each
+
+cars.forEach((car) => {
+  console.log(car);
+});
+
+cars.forEach((car, index, array) => {
+  console.log(`${car}: ${index}`);
+  console.log(array);
+});
+
+// map - return a different array
+
+const users = [
+  {id:1, name: 'John'},
+  {id:2, name: 'Sara'},
+  {id:3, name: 'Alex'}
+]
+
+const ids = users.map((user) => {
+  return user.id;
+});
+
+console.log(ids);
+
+
+// for in loop
+
+const pilot = {
+  firstName: "John",
+  lastName: 'Doe',
+  age: 40
+}
+
+for(let x in pilot){
+  console.log(`${x} : ${pilot[x]}`);
+}
