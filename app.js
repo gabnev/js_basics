@@ -560,3 +560,66 @@ switch (new Date().getDay()){
 }
 
 console.log(day);
+console.clear();
+
+// Functions
+
+// declarations
+
+
+// default value ES5
+
+function greetES5(firstName, lastName){
+  // console.log('Hello');
+  if(typeof firstName === 'undefined'){firstName = 'John'}
+  if(typeof lastName === 'undefined'){lastName = 'Doe'}
+  return 'Hello' + ' ' + firstName + ' ' + lastName;
+}
+
+console.log(greetES5('Steve', 'Smith'));
+
+// default value ES6
+
+function greetES6(firstName = 'John', lastName = 'Doe'){
+  // console.log('Hello');
+  return 'Hello' + ' ' + firstName + ' '+ lastName;
+}
+
+console.log(greetES6('Steve', 'Smith'));
+
+// function expressions - normally used an anonymous function as the value of a variable
+
+const square = function(x){
+  return x * x;
+};
+
+console.log(square(8));
+
+// IMEDIATELY INVOKABLE FUNCTION EXPRESSIONS - IIFEs
+
+(function(){
+  console.log('IIFE Ran . . .');
+})();
+
+(function(name){
+  console.log('Hello' + ' ' + name);
+})('Brad');
+
+// Property method
+
+const todo = {
+  add: () => {
+    console.log('Add todo . . .');
+  },
+  edit: (id) => {
+    console.log(`Edit todo ${id}`);
+  }
+}
+
+todo.delete = () => {
+  console.log('Delete todo . . .')
+}
+
+todo.add();
+todo.edit(22);
+todo.delete();
